@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Abhishek",
+      "email": "A@gmail.com",
+      "users": "Abhi5623",
+      "mobile": "7782378732"
+    },
+    {
+      "id": 9,
+      "name": "Akash",
+      "email": "A@gmail.com",
+      "users": "ak63355",
+      "mobile": "7689008778"
+    },
+    {
+      "id": 11,
+      "name": "Aniket",
+      "email": "Ani@gmail.com",
+      "users": "Ani5623",
+      "mobile": "7784378376"
+    },
+    {
+      "id": 13,
+      "name": "Shubham",
+      "email": "Shubh@gmai.com",
+      "users": "shubham635",
+      "mobile": "8777887787"
+    },
+    {
+      "id": 14,
+      "name": "Shreyash",
+      "email": "shr@gmail.com",
+      "users": "shrey7383",
+      "mobile": "7843787843"
+    },
+    {
+      "id": 16,
+      "name": "Mrityunjay",
+      "email": "ms@gmail.com",
+      "users": "ms737667",
+      "mobile": "7879231789"
+    },
+    {
+      "id": 17,
+      "name": "ambuj sharma",
+      "email": "ambuj sharma0078@gmail.com",
+      "users": "ambuj9977",
+      "mobile": "9936538177"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

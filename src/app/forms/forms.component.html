@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 mt-5">
+            <div class="dataField">
+                <h1 align="center"><strong>Contact Details</strong></h1>
+
+
+                <div class="form-group mb-4">
+                    <input type="text" name="name" #val class="form-control" placeholder="Search"
+                        [(ngModel)]="users" (ngModelChange)="search(val)" />
+                </div>
+
+
+                <hr />
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Mobile</th>
+                            <th scope="col">User Name</th>
+                            <th scope="col">Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let data of AllUsersData">
+                            <td>{{ data.name }}</td>
+                            <td>{{ data.email }}</td>
+                            <td>{{ data.mobile }}</td>
+                            <td>{{ data.users }}</td>
+                            <td>
+                                <button (click)="removeData(data)" class="btn btn-danger">
+                                    Remove
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Coding for input field -->
+
+        <div class="col-md-5 mt-4">
+            <h1 align="center"><strong>Enter Your Contact Details</strong></h1>
+            <form [formGroup]="formValue">
+                <label><strong>Name</strong></label>
+                <div class="form-group mb-4">
+                    <input type="text" formControlName="name" name="name" class="form-control"
+                        placeholder="Enter your name" />
+                </div>
+                <label><strong>Email</strong></label>
+                <div class="form-group mb-4">
+                    <input type="text" formControlName="email" name="email" class="form-control"
+                        placeholder="Enter your email" />
+                </div>
+
+                <label><strong>Mobile</strong></label>
+                <div class="form-group mb-4">
+                    <input type="text" formControlName="mobile" name="mobile" minlength="10" maxlength="10"
+                        class="form-control" placeholder="Enter your mobile" />
+                </div>
+
+                <label><strong>User Name</strong></label>
+                <div class="form-group mb-4">
+                    <input type="text" formControlName="users" name="users" class="form-control"
+                        placeholder="Enter your user name" />
+                </div>
+            </form>
+            <button (click)="onSubmit(formValue)" [disabled]="!formValue.valid" class="btn btn-success">
+                Submit
+            </button>
+        </div>
+    </div>
+</div>

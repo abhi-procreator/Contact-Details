@@ -1,0 +1,6 @@
+<div class="container">
+    <div *ngFor="let arr of myArray">
+        <div>{{ arr.id }} {{ arr.name }}</div>
+    </div>
+    <button (click)="push()" class="btn btn-primary">push</button>
+</div>
